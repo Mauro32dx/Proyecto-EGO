@@ -1,6 +1,7 @@
 import React from 'react';
 import Modelos from '../Modelos/Modelos.js';
 import FichaDeModelo from '../FichaDeModelo/FichaDeModelo.js';
+import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 export default class Home extends React.Component {
     constructor(props){
@@ -13,11 +14,23 @@ export default class Home extends React.Component {
     render () {
         return (
             <div>
+                <Router>
+                <div>
                     <div>Logo</div>
-                    <button>Modelos</button>
-                    <button>Ficha de modelo</button>
-                    <Modelos />
-                    <FichaDeModelo />
+                    <Link to="/Modelos">Modelos</Link> <br />
+                    <Link to="/FichaDeModelo">Ficha del modelo</Link>
+
+                    <Switch>
+                    <Route path="/Modelos">
+                        <Modelos />
+                    </Route>
+                    <Route path="/FichaDeModelo">
+                        <FichaDeModelo />
+                    </Route>
+                    
+                    </Switch>
+                </div>
+                </Router>
             </div>
         )
     }
