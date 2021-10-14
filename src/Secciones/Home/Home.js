@@ -1,7 +1,9 @@
 import React from 'react';
 import Modelos from '../Modelos/Modelos.js';
 import FichaDeModelo from '../FichaDeModelo/FichaDeModelo.js';
-import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, NavLink} from "react-router-dom";
+import BarraNavegacion from '../../Componentes/BarraNavegacion/BarraNavegacion.js';
+
 
 export default class Home extends React.Component {
     constructor(props){
@@ -16,9 +18,11 @@ export default class Home extends React.Component {
             <div>
                 <Router>
                 <div>
-                    <div>Logo</div>
-                    <Link to="/Modelos">Modelos</Link> <br />
-                    <Link to="/FichaDeModelo">Ficha del modelo</Link>
+                    <BarraNavegacion>
+                        <NavLink activeClassName="active" to="/Modelos" className="BotonLink"><h3 >Modelos</h3></NavLink>
+                        <NavLink activeClassName="active" to="/FichaDeModelo" className="BotonLink"><h3 >Ficha del modelo</h3></NavLink> 
+                    </BarraNavegacion>
+                    
 
                     <Switch>
                     <Route path="/Modelos">
