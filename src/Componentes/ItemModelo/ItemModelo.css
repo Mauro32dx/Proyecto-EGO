@@ -1,0 +1,28 @@
+.ItemModelo{
+    width: 300px;
+}
+.ContenedorTitulo{
+    height: 80px;
+    
+}
+.ContenedorImagen{
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.NombreText{
+    font-size: 25px;
+    padding:0;
+    padding-top: 20px;
+    margin: 0;
+}
+.DescripcionText{
+    color: rgb(73, 73, 73);
+    padding:0;
+    margin: 0;
+}
+.fotoVeiculo{
+    width: 290px;
+    height: auto;
+}
