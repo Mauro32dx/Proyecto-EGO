@@ -1,0 +1,79 @@
+.ContenedorCarrusel {
+    background: rgb(247, 247, 247);
+    padding-bottom: 15px;
+    position: relative;
+}
+.ItemParte{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    text-align: left;    
+
+}
+.fotoPartes{
+    width: 200px;
+    height: 100px;
+    background: black;
+    border-radius: 5px;
+}
+.descripcionItemParte {
+    font-size: 14px;
+    padding:0;
+    margin: 10px;
+    color: rgb(80, 80, 80);
+}
+
+.tituloItemParte {
+    font-size: 15px;
+    padding:0;
+    margin: 10px;
+    color: rgb(22, 22, 22);
+}
+.gradienteIzquerdo{
+    position: absolute;
+    left: 0;
+    background: rgb(247,247,247);
+    background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 30%, rgba(255, 255, 255, 0) 100%);
+    width: 90px;
+    height: 220px;
+}
+.gradienteDerecho{
+
+    position: absolute;
+    right: 0;
+    background: rgb(247,247,247);
+    background: linear-gradient(90deg, rgba(255, 255, 255,0) 0%, rgba(247,247,247,1) 60%, rgba(247,247,247, 1) 100%);
+    width: 90px;
+    height: 220px;
+}
+
+.ContenedorItemsCarrusel {
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-left:60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.ContenedorItemsCarrusel::-webkit-scrollbar{
+    border-radius: 6px;
+    height: 12px;
+    background: rgba(194, 194, 194, 0.226);
+    
+}
+.ContenedorItemsCarrusel::-webkit-scrollbar-thumb{
+    border-radius: 6px;
+    background: rgb(128, 127, 127);
+    
+}
+.ContenedorItemsCarrusel::-webkit-scrollbar-thumb:hover{
+    background: rgb(109, 109, 109);
+    
+}
+

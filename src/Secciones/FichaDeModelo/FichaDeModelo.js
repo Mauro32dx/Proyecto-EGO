@@ -1,5 +1,7 @@
 import React from 'react';
-import "./FichaDeModelo.css"
+import "./FichaDeModelo.css";
+import CarruselPartesVehiculo from "../../Componentes/Carrusel/CarruselPartesVehiculo.js"
+
 import Imagen1 from "../../Imagenes/Imagen1.png";
 import Imagen2 from "../../Imagenes/Imagen2.jpg";
 import Imagen3 from "../../Imagenes/Imagen3.png";
@@ -25,14 +27,9 @@ export default class FichaDeModelo extends React.Component {
                     </div>
               
                 </section>
-                <section style={{background:"rgb(119, 119, 134)"}} > 
-                    <br/>
-                    <br/>
-                    <br/>
-                    <p> CARRUSEL</p>
-                    <br/>
-                    <br/>
-                    <br/>
+                <section > 
+                <CarruselPartesVehiculo ItemsPartes={this.state.ItemsPartes} />
+
                 </section>
                 <section className="estilosSeccion" > 
                     

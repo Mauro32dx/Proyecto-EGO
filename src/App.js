@@ -1,6 +1,15 @@
 import './App.css';
 import Home from './Secciones/Home/Home';
 
+import Parte1 from "./Imagenes/Parte1.jpg";
+import Parte2 from "./Imagenes/Parte2.jpg";
+import Parte3 from "./Imagenes/Parte3.jpg";
+import Parte4 from "./Imagenes/Parte4.jpg";
+import Parte5 from "./Imagenes/Parte5.jpg";
+import Parte6 from "./Imagenes/Parte6.jpg";
+import Parte7 from "./Imagenes/Parte7.jpg";
+import Parte8 from "./Imagenes/Parte8.jpg";
+
 const Modelos = [
   {
       id: 1,
@@ -76,11 +85,61 @@ const Modelos = [
   }
 ]
 
+const ItemsPartes = [
+  {
+      id: 1,
+      titulo: "Motores",
+      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      photo: Parte1,
+  },
+  {
+      id: 2,
+      titulo: "Suspencion Mejorada",
+      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      photo: Parte2,
+  },
+  {
+      id: 3,
+      titulo: "Transmisíon automática",
+      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      photo: Parte3,
+  },
+  {
+      id: 4,
+      titulo: "Transmisíon manual",
+      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      photo: Parte4, 
+  },
+  {
+      id: 5,
+      titulo: "Transmisíon asistida",
+      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      photo: Parte5,
+  },
+  {
+      id: 6,
+      titulo: "Traccion tracera",
+      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      photo: Parte6, 
+  },
+  {
+      id: 7,
+      titulo: "Traccion delantera",
+      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      photo: Parte7,
+  },
+  {
+      id: 8,
+      titulo: "Sistema de frenos",
+      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      photo: Parte8,
+  }
+]
 
 function App() {
   return (
     <div className="App">
-      <Home Modelos={Modelos}/>
+      <Home Modelos={Modelos} ItemsPartes={ItemsPartes} />
     </div>
   );
 }

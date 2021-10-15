@@ -10,6 +10,7 @@ export default class Home extends React.Component {
         super();
         this.state = { 
             Modelos: props.Modelos,
+            ItemsPartes: props.ItemsPartes,
          }
     }
     
@@ -29,7 +30,7 @@ export default class Home extends React.Component {
                         <Modelos Modelos={this.state.Modelos}/>
                     </Route>
                     <Route path="/FichaDeModelo">
-                        <FichaDeModelo />
+                        <FichaDeModelo ItemsPartes={this.state.ItemsPartes}/>
                     </Route>
                     
                     </Switch>

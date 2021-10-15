@@ -27,8 +27,8 @@ export default function BarraNavegacion(props) {
                 <p className="textMenu">Menú</p>
                 <button  className='botonMenu'><IconoMenu width="30px"/></button>
                 <div className='seccionMenu' style={false?styleActivo:styleDesactivo}> 
-                <button ><IconoCerrar width="30px"/></button>
-                <p>login</p></div>
+                <button style={{display:"none"}}><IconoCerrar width="30px"/></button>
+                <p style={{display:"none"}}>login</p></div>
             </div>
         </div>
     )
