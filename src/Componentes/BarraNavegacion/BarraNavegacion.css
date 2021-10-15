@@ -36,8 +36,9 @@
 .BotonLink {display: flex;
     align-content: center;
     height: 69px;
-    padding-left: 30px;
     padding-right: 30px;
+    padding-left: 30px;
+  
     color: black;
     text-decoration: none;
 
