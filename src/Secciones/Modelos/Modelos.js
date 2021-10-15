@@ -14,6 +14,7 @@ export default class Modelos extends React.Component {
 
         let crearListaItems = this.state.Modelos.map((data) => 
             <ItemModelo
+                id={data.id}
                 name={data.name } 
                 year={data.year} 
                 price={data.price} 
