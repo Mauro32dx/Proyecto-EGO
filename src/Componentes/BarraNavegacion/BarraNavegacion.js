@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import "./BarraNavegacion.css";
 import IconoMenu from '../Iconos/IconoMenu.js';
 import IconoCerrar from '../Iconos/IconoCerrar';
-
+import Logo from '../Iconos/Logo';
 
 export default function BarraNavegacion(props) {
     const [estado, setEstado] = useState(false);
@@ -30,7 +30,7 @@ export default function BarraNavegacion(props) {
     return (
         <div className="ContenedorNavbar">
             <div className="ContenedorLinks"> 
-                <div className="LogoEGO"><p className="textLogo">EGO</p></div>
+                <div className="LogoEGO"><Logo width="50px"/></div>
                 <div className="ContenedorBotones" >
                     {props.children}  
                 </div>

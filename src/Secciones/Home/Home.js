@@ -20,13 +20,13 @@ export default class Home extends React.Component {
                 <Router>
                 <div>
                     <BarraNavegacion>
-                        <NavLink activeClassName="active" to="/Modelos" className="BotonLink"><h3 >Modelos</h3></NavLink>
+                        <NavLink activeClassName="active" to="/proyecto-ego" className="BotonLink"><h3 >Modelos</h3></NavLink>
                         <NavLink activeClassName="active" to="/FichaDeModelo" className="BotonLink"><h3 >Ficha del modelo</h3></NavLink> 
                     </BarraNavegacion>
                     
 
                     <Switch>
-                    <Route path="/Modelos">
+                    <Route path="/proyecto-ego">
                         <Modelos Modelos={this.state.Modelos}/>
                     </Route>
                     <Route path="/FichaDeModelo">
